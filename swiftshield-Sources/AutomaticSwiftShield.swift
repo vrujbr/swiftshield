@@ -122,6 +122,9 @@ extension AutomaticSwiftShield {
                     if attribute.split(separator: ".").last == "public" {
                         return nil
                     }
+                    if attribute.split(separator: ".").last == "open" {
+                        return nil
+                    }
                 }
             }
         }
